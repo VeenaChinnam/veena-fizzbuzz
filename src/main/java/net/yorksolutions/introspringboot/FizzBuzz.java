@@ -34,4 +34,23 @@ public class FizzBuzz {
 //        }
         return Integer.toString (this.num);
     }
+
+    public static String staticPlay(int num) {
+        boolean isD5 = num % 5 == 0;
+        boolean isD3 = num % 3 == 0;
+
+        if (isD5 && isD3) {
+            return "fizz buzz";
+        }
+        if (isD5) {
+            return "buzz";
+        }
+        if (isD3) {
+            return "fizz";
+        }
+
+        return Integer.toString(num);
+    }
+
+
 }
